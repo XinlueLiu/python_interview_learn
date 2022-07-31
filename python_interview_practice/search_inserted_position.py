@@ -1,5 +1,4 @@
 
-
 class Sol_search_inserted_position:
     def __init__ (self, list1, target):
         self.list1 = list1
