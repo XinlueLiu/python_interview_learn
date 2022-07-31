@@ -1,18 +1,18 @@
 from typing import List
 
 # This is the brute force way
-# class Solution:
-#     def __init__ (self, nums = [], target = 0):
-#         self.nums = nums
-#         self.target = target
-#     def twoSum(self):
-#         nums = self.nums
-#         target = self.target
-#         for itr in range(len(nums)):
-#             for nxt_itr in range(itr+1, len(nums)):
-#                 if (nums[itr] + nums[nxt_itr] == target):
-#                     return [itr, nxt_itr]
-#         return []
+class Solution_bf:
+    def __init__ (self, nums = [], target = 0):
+        self.nums = nums
+        self.target = target
+    def twoSum(self):
+        nums = self.nums
+        target = self.target
+        for itr in range(len(nums)):
+            for nxt_itr in range(itr+1, len(nums)):
+                if (nums[itr] + nums[nxt_itr] == target):
+                    return [itr, nxt_itr]
+        return []
 
 class Solution:
     def __init__ (self, num, target):
