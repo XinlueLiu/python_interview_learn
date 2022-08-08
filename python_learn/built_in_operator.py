@@ -75,3 +75,4 @@ for letter in mystring:
     mylist.append(letter)
 
 print(mylist)
+print(mystring)

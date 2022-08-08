@@ -53,6 +53,7 @@ for item in map(square, my_nums):
     print(item)
 
 print(list(map(square, my_nums)))
+print(list(map(str, my_nums)))
 
 #filter will fiter out based on function condition
 def check_even(num):
@@ -60,5 +61,7 @@ def check_even(num):
 
 for n in filter(check_even, my_nums):
     print(n)
+
+print(list(filter(check_even, my_nums)))
 
 #can use lamda function is only intended to use function once

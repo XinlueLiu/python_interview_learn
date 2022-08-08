@@ -6,4 +6,4 @@ print(len(t))
 #can mix object types
 #built in method: how many(count) and the index(index)
 print(t.count(1))
-print(t.index(1))
+print(t.index(2))

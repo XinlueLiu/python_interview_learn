@@ -22,6 +22,7 @@ class Solution_simple:
         if (self.num < 0):
             print('False')
         # convert the number to a list
+        # need to convert original number into a str because str is iterable
         pal_list = list(map(int, str(self.num)))
         print(f'the new list constructed from input int is {pal_list}')
         # reverse the list 

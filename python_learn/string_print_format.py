@@ -1,14 +1,15 @@
 #python has variable data types, and can use type() to display the type of the data type
 test = 1
-print(type(test))
+print(f'type of variable test is {type(test)}')
 test = "dog"
 print(type(test))
 print(test)
 
 #Strings
-#ordered sequences, so can use indexing or slicing to grab sub-sections of string
+# ordered sequences, so can use indexing or slicing to grab sub-sections of string
 test = "testing the index"
 print(test[0])
+# get the last item
 print(test[-1])
 #from test[2](s) all the way to end
 #up to is [:n], but NOT including n
@@ -26,14 +27,15 @@ print(test[::-1])
 print('play ' + test)
 #pring 10 zs
 print('z' * 10)
-#cound, find, center, 
+#count, find, center, 
 
 
 #build_in methods
-#capitalize
+#capitalize first character
 print(test.capitalize())
+# upper case all characters
 print(test.upper())
-#default split based on white space
+#default split based on white space. split into a list!
 print(test.split())
 #split based on characters. e is removed!
 print(test.split('e'))
@@ -62,4 +64,4 @@ print(pow(2,5,4))
 #round
 print(round(3.49))
 #round to 2 decimals
-print(round(3.1415926,2))
+print(round(3.1415926,3))

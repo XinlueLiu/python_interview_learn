@@ -17,10 +17,10 @@ print(my_dict)
 # for key, value in n.items():
 #     d[key] = value
 if ("laptop" not in my_dict):
-    my_dict.update({"laptop":'apple'})
+    my_dict.update({"laptop":'razer'})
     print(my_dict)
 
-my_dict['laptop'] = 'dell'
+my_dict['laptop'] = 'apple'
 print(my_dict)
 #delete a specific key-value pair
 del my_dict['laptop']

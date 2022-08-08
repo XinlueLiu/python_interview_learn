@@ -1,4 +1,4 @@
-with open('testfile.txt','r+') as myfile:
+with open('testfile.txt','w+') as myfile:
     lines = 'testtteestest\nnewline'
     myfile.write(lines)
     #move the cursor to the beginning of the file

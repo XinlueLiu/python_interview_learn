@@ -31,7 +31,7 @@ class Sol_climbing_chair:
 
 
 if __name__ == '__main__':
-    n = 2
+    n = 9
     sol_climbing_chair = Sol_climbing_chair(n)
     res = sol_climbing_chair.climb_chair()
     print(f'numbers of distinct ways to climb to the top is {res}')

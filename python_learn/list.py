@@ -1,4 +1,4 @@
-#ordered sequences that can hold variety of object types
+#order is persistanted in list
 my_list = [1,2,3]
 print(my_list)
 my_list = [1,2,'test']

@@ -1,4 +1,5 @@
 #unordered collections of UNIQUE elements
+# mutable. we can add item
 myset = set()
 myset.add(1)
 print(myset)

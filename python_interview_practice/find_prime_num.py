@@ -11,6 +11,9 @@ def find_prime(num):
                 flag = False
                 print(f'first factor find thats not 1 nor itself is {i}')
                 break
+    else:
+        print(f'{num} is not a prime number')
+        return
     if flag:
         print(f'{num} is a prime number')
     else:

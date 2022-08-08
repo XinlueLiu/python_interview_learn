@@ -46,7 +46,7 @@ class Sol_merge_two_sorted_list:
         sol_list_head = ListNode()
         # create current pointer to point to the head
         cur = sol_list_head
-        # cconstruct a new linked list with dummy head to avoid edge cases
+        # construct a new linked list with dummy head to avoid edge cases
         sol_list = LinkedList(sol_list_head)
     
         # while two lists are not empty
@@ -90,5 +90,4 @@ if __name__ == '__main__':
     list2.insert(4)
     list2.print_list('list2')
     sol = Sol_merge_two_sorted_list(list1.head, list2.head)
-    sol_list = sol.merge_two_sorted_list()
-    sol_list.print_list('sol_list')
+    sol.merge_two_sorted_list().print_list('sol_list')
