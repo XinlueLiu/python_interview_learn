@@ -11,10 +11,10 @@ def find_missing_number_xor(nums):
 def find_missing_number_sum(nums):
     # arithmetic sequence
     res1 = (len(nums) * (len(nums) + 1)) / 2
-    res2 = 0
-    for val in nums:
-        res2 = res2 + val
-    return res1 - res2
+    # for val in nums:
+    #     res2 = res2 + val
+    # or just use sum function
+    return res1 - sum(nums)
 
 if __name__ == "__main__":
     nums = [3,0,1]
