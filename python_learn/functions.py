@@ -55,7 +55,7 @@ for item in map(square, my_nums):
 print(list(map(square, my_nums)))
 print(list(map(str, my_nums)))
 
-#filter will fiter out based on function condition
+#filter will fiter out based on function condition(key values that match filter condition)
 def check_even(num):
     return num%2 == 0
 

@@ -14,6 +14,6 @@ x = 4 # 100
 sol = reverse_bits(x)
 print(sol) 
 
-# TODO: basic idea is to extra value of interest and shift to corresponding location
+# TODO: basic idea is to extract value of interest and shift to corresponding location
 # extration: RIGHT shift bit of interest i times, i is the location of interested bit
-# ORed: Or extrated bit to cumulated res. the extrated bit need to be left shifted to position(31-i)
+# ORed: Or extracted bit to accumulate res. the extrated bit need to be left shifted to position(31-i)

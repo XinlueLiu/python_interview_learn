@@ -1,4 +1,4 @@
-#key value pair
+# key value pair
 my_dict = {'key1':'value1', "key2":'value2'}
 print(my_dict['key1'])
 my_dict = {'str':'strval', "list":[0,1,2], 'dict':{'dict1':1, 'dict2':2}}
@@ -10,11 +10,11 @@ print(my_dict['str'][0].upper())
 my_dict['str2'] = 'is it a string'
 print(my_dict)
 
-#update. Can also update an existing method
-#in this case, only adding when laptop not in keys
-#update is handy when you want to update existing dictionary with another dictionary
-#aviod for loop like this
-# for key, value in n.items():
+# update. Can also update an existing method
+# in this case, only adding when laptop not in keys
+# update is handy when you want to update existing dictionary with another dictionary
+# aviod for loop like this
+#  for key, value in n.items():
 #     d[key] = value
 if ("laptop" not in my_dict):
     my_dict.update({"laptop":'razer'})

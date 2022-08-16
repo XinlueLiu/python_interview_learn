@@ -1,9 +1,11 @@
-#unordered collections of UNIQUE elements
-# mutable. we can add item
+# unordered collections of UNIQUE elements
+# mutable. we can add/remove item, but cannot change item assignment
 myset = set()
 myset.add(1)
 print(myset)
 myset.add('test')
+print(myset)
+myset.remove(1)
 print(myset)
 
 mylist = [1,1,1,1,2,3,3,4,5,1,2]

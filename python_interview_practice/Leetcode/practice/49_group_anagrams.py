@@ -10,7 +10,7 @@ def group_anagram(strs):
     # for the key, we can create an list of 26 elements(each index represents one alphabet,
     # and the value of that index will be the number of occurances of that alphabet)
     # so for 1st group, [1,0,0,0,1,.......,1,..]
-    # ord(e) - ord(a)
+    # ord(e) - ord(a). ord returns the unicode of that character
 
     # create a list of 26 elements
     # res_dict = {}

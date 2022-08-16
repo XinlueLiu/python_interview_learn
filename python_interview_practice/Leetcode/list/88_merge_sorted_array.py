@@ -25,3 +25,10 @@ if __name__ == "__main__":
     sol = Sol_merge_sorted_array(a1, len_a1, a2, len_a2)
     merged_array = sol.merge()
     print(merged_array)
+
+    a1 = [1,2,3]
+    a2 = [2,5,6]
+    # extend adds all items of an iterable to the end of the array
+    a1.extend(a2)
+    a1.sort()
+    print(a1)

@@ -5,7 +5,6 @@
 # maintain a result list size of nums
 # from left to right, assign the prefix to the index position
 # prefix = 1 at the beginning, then multiplied with itself at its position to be the prefix of next value
-#      [1,-1,-1,0,0] prefix = 1, -1, -1, 0, 
 # go from right to left, multiple the each element in result by its postfix
 # [1,-1,-1,0,0] 
 # prefix = 1, -1, -1, 0, 0
@@ -22,12 +21,14 @@ def product_of_array_except_self(nums):
         res[i] = prefix
         prefix *= nums[i]
     # go from right to left, multiple postfix to prefix
-    # reverse order, 1 step at a time
+    # reverse order, 1 step at a time. start from len(nums) - 1 because range will include the starting index
     for i in range(len(nums) - 1, -1, -1):
-        res[i] *= postfix
+        res[i] *= postfix # result = prefix * postfix
         postfix *= nums[i]
     return res
 
+# prefix [1, -1, -1, 0, 0]
+# postfix[0, 0, -9, 3, 1]
 nums = [-1,1,0,-3,3]
 sol = product_of_array_except_self(nums)
 print(sol)

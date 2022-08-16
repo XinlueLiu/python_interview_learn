@@ -14,11 +14,19 @@ def find_two_sum(nums, target):
             res_dict[val] = index
     return []
 
+# brutal force, two for loops
+def bf (nums,target):
+    for i in range(len(nums)):
+        for j in range(i,len(nums)):
+            if (nums[i] + nums[j] == target):
+                return [i,j]
+    return [] 
+
 if __name__ == "__main__":
     nums = [1,2,3,4]
     # need to return [2,3] as indices
     target = 7
-    sol = find_two_sum(nums,target)
+    sol = bf(nums,target)
     print(sol)
 
     # TODO:

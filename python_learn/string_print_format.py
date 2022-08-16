@@ -12,7 +12,7 @@ print(test[0])
 # get the last item
 print(test[-1])
 #from test[2](s) all the way to end
-#up to is [:n], but NOT including n
+#up to is [:n]
 print(test[2:])
 #secitons of the string [start:stop:step]
 #this will INCLUDE start position, but NOT INCLUDE stop
@@ -63,5 +63,5 @@ print(bin(234))
 print(pow(2,5,4))
 #round
 print(round(3.49))
-#round to 2 decimals
+#round to 3 decimals
 print(round(3.1415926,3))

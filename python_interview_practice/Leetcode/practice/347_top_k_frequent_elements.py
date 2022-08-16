@@ -1,7 +1,7 @@
 # Given an integer array nums and an integer k, return the k most frequent elements
 # maintain a dictionary, that key being the item, value being the number of occurances
 # TODO: 1. need to maintain a count table to count top k elements. we know we have at most len(nums) occurances
-# 2. each number of occurance may have duplicate numbers
+# 2. each number of occurance may have duplicate numbers, thats why for each entry of count table we are maintaining a list
 # 3. size of 2D list need to be: range + 1 because 0 occurance makes no sense
 
 def top_k_frequent_elements(nums,k):

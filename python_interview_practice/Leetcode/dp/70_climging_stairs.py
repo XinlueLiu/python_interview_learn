@@ -22,6 +22,7 @@ class Sol_climbing_chair:
             return 1
         if (n == 0):
             return 0
+        # n-2 because we have already known the top 3 steps. range will dicard the last variable
         for steps in range(n-2):
             tmp = top_stair_minus_2
             top_stair_minus_2 = top_stair_minus_1 + top_stair_minus_2

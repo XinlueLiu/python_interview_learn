@@ -28,6 +28,13 @@ print(my_dog.spots)
 print(my_dog.species)
 my_dog.bark('test')
 
+# class B inherit from A
+class B(A):
+    def __init__(self, num):
+        A.__init__(self)
+        # inherit all methods of parent class
+        super().__init__(p0,p1,p2)
+
 #inheritance
 class Cat(Dog):
     def __init__(self, breed = 'll', name = "xx", spots = True):
@@ -45,11 +52,11 @@ my_cat = Cat()
 my_cat.bark()
 print(my_cat.species)
 
-#polymorphism
+# polymorphism
 # same function name being used for different types
 # Method Overriding: when work with inherience that child has same method name as parent
 
 # can user define __str__ method when printing, __len__ when len, __del__ when try to delete
 
-#__name__ get assigned when run the script. If __name__ = "__main__", it is ran directly
-#so by checking this we can see if its being run directly or being imported
+# __name__ get assigned when run the script. If __name__ = "__main__", it is ran directly
+# so by checking this we can see if its being run directly or being imported

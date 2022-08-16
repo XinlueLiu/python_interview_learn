@@ -21,6 +21,13 @@ class Sol_sqrt_x:
                 return mid
         # if there is no perfect square root, return lo if round up, hi if round down
         return hi
+            # 8
+            # lo = 0, hi = 8, mid = 4
+            # lo = 0, hi = 3, mid = 1
+            # lo = 1, hi = 3, mid = 2
+            # lo = 2, hi = 3, mid = 2
+            # lo = 3, hi = 3, mid = 4
+            # lo = 3, hi = 2, exit. low has crossed hi
 
 if __name__ == "__main__":
     x = 5

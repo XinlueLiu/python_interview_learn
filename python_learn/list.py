@@ -9,6 +9,8 @@ print(len(my_list))
 print(my_list[0])
 new_list = ['new_list', 'aaa']
 print(my_list + new_list)
+my_list.extend(new_list)
+print(my_list)
 
 #can mutate and change the list
 new_list[0] = new_list[0].upper()
@@ -25,5 +27,6 @@ print(num_list)
 #sort occur IN PLACE, does not return anything. return NoneType
 num_list.sort()
 print(num_list)
+# reverse in place. [::-1] returns new reversed list
 num_list.reverse()
 print(num_list)

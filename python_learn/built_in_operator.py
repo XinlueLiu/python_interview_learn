@@ -1,13 +1,13 @@
-#range up to. in this case not including 10, but including 0, the start val
-#(start,step,step)
+# range up to. in this case not including 10, but including 0, the start val
+# (start,step,step)
 for num in range(0,10,2):
     print(num)
 
-#can type cast
+# can type cast
 print(list(range(0,10,2)))
 
-#enum
-#typical
+# enum
+# typical
 index_cnt = 0
 word = 'abcde'
 for letter in word:
@@ -15,14 +15,14 @@ for letter in word:
     print(letter)
     index_cnt += 1
 
-#get back a tuple
+# get back a tuple
 for item in enumerate(word):
     print(item)
 
 for index,letter in enumerate(word):
     print(f'index is {index}, letter is {letter}')
 
-#zip, also returns a tuple. only zip matching length. In this case, 3 items
+# zip, also returns a tuple. only zip matching length. In this case, 3 items
 list1 = [1,2,3,4]
 list2 = ['a','b','c']
 for item in zip(list1, list2):
@@ -30,7 +30,7 @@ for item in zip(list1, list2):
 
 print(list(zip(list1,list2)))
 
-#in 
+# in 
 if 'x' in list1:
     print('in the list')
 else:
@@ -47,19 +47,19 @@ if 'value1' in my_dict.keys():
 else:
     print('NOT IN THE DICT KEYS!')
 
-#random
+# random
 from random import shuffle
 mylist_random = [1,2,3,4,5,6,7,8,9,0]
-#randomly shuffle the list. IN-PLACE function
+# randomly shuffle the list. IN-PLACE function
 shuffle(mylist_random)
 print(mylist_random)
 
 from random import randint
-#(lower_bound, upper_bound)
+# (lower_bound, upper_bound)
 print(randint(0,100))
 
-#input function to accept user input
-#this will always accept as a STRING!
+# input function to accept user input
+# this will always accept as a STRING!
 result = input('Enter a number here\n')
 if int(result) == 5:
     print("int 5!")

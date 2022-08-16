@@ -25,6 +25,7 @@ def find_lcs_efficient(nums):
     # maintain a maxlength variable to count the maximum consecutive length 
     maxLength = 0
     for n in nums:
+        # check if it is the start of the sequence
         if (n - 1 not in nums):
             # maintain a local length
             length = 0
